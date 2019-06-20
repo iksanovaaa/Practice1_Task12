@@ -67,7 +67,7 @@ namespace Task12
         public static void PrintInfo()
         {
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("Количество сравнений: {0}\nКоличество перемещений: {1}", compares, removes);
+            Console.WriteLine("Количество сравнений: {0}\nКоличество пересылок: {1}", compares, removes);
             Console.ResetColor();
         }
 
@@ -162,7 +162,7 @@ namespace Task12
                     temp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = temp;
-                    removes++;
+                    if (i != j) removes++;
                     ++i;
                     --j;
                 }
