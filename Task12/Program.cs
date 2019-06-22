@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Task12
 {
-    class Program
+    public class Program
     {
-        static int[] descOrder, ascOrder, array, descOrder2, ascOrder2, array2; // упорядоченный по убыванию, по возрастанию, неупорядоченный массивы
-        static int length, removes, compares;
-        static Random rnd = new Random();
+        public static int[] descOrder, ascOrder, array, descOrder2, ascOrder2, array2; // упорядоченный по убыванию, по возрастанию, неупорядоченный массивы
+        public static int length, removes, compares;
+        public static Random rnd = new Random();
 
         static void Main(string[] args)
         {
